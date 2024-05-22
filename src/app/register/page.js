@@ -21,7 +21,7 @@ export default function Home() {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:3000/api/user/register', {
+      const response = await fetch(`${process.env.BACKEND_API}/api/user/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

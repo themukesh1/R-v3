@@ -17,7 +17,7 @@ export default function Verification({ params }) {
 
     try {
       // Make PUT request to verify user
-      const response = await fetch("/api/user/verification", {
+      const response = await fetch(`${process.env.BACKEND_API}/api/user/verification`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
